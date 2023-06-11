@@ -1,4 +1,5 @@
 import reactLogo from './assets/react.svg'
+import Game from './Game'
 import Start from './Start'
 import { usePreguntas } from './state/preguntas'
 
@@ -13,7 +14,7 @@ function App (): JSX.Element {
       </header>
       <main className='container flex justify-center'>
        {preguntas.length === 0 && <Start/>}
-       {preguntas.length > 0 && <h1>hola</h1>}
+       {preguntas.length > 0 && <Game />}
       </main>
     </div>
   )

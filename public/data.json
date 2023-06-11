@@ -1,112 +1,107 @@
 [
-    {
-      "id": 1,
-      "pregunta": "¿Cuál de las siguientes opciones describe mejor React?",
-      "respuestas": {
-        "a": "Un lenguaje de programación",
-        "b": "Un framework de JavaScript",
-        "c": "Un sistema operativo",
-        "d": "Una base de datos"
-      },
-      "respuesta_correcta": "b"
-    },
-    {
-      "id": 2,
-      "pregunta": "¿Cuál es la sintaxis correcta para renderizar un componente React en el DOM?",
-      "respuestas": {
-        "a": "ReactDOM.renderComponent(MyComponent, document.getElementById('root'));",
-        "b": "React.render(MyComponent, document.getElementById('root'));",
-        "c": "ReactDOM.render(<MyComponent />, document.getElementById('root'));",
-        "d": "React.renderComponent(<MyComponent />, document.getElementById('root'));"
-      },
-      "respuesta_correcta": "c"
-    },
-    {
-      "id": 3,
-      "pregunta": "¿Cuál de las siguientes opciones es una forma correcta de definir un estado inicial en un componente React?",
-      "respuestas": {
-        "a": "getInitialState() { return { data: [] }; }",
-        "b": "state = { data: [] };",
-        "c": "this.state = { data: [] };",
-        "d": "constructor(props) { super(props); this.state = { data: [] }; }"
-      },
-      "respuesta_correcta": "d"
-    },
-    {
-      "id": 4,
-      "pregunta": "¿Cuál es la forma recomendada de modificar el estado de un componente en React?",
-      "respuestas": {
-        "a": "this.state.data = newValue;",
-        "b": "this.setState({ data: newValue });",
-        "c": "this.props.data = newValue;",
-        "d": "this.modifyState({ data: newValue });"
-      },
-      "respuesta_correcta": "b"
-    },
-    {
-      "id": 5,
-      "pregunta": "¿Qué método se utiliza para ejecutar código justo después de que un componente se haya montado en el DOM?",
-      "respuestas": {
-        "a": "componentDidMount()",
-        "b": "componentWillMount()",
-        "c": "componentDidUpdate()",
-        "d": "componentWillUpdate()"
-      },
-      "respuesta_correcta": "a"
-    },
-    {
-      "id": 6,
-      "pregunta": "¿Cuál de las siguientes opciones describe mejor un componente controlado en React?",
-      "respuestas": {
-        "a": "Un componente que no puede ser modificado después de su creación",
-        "b": "Un componente que utiliza una función de flecha para su renderizado",
-        "c": "Un componente cuyo estado es gestionado por el propio componente",
-        "d": "Un componente que solo puede ser utilizado como hijo de otro componente"
-      },
-      "respuesta_correcta": "c"
-    },
-    {
-      "id": 7,
-      "pregunta": "¿Cuál es la forma correcta de pasar propiedades (props) a un componente en React?",
-      "respuestas": {
-        "a": "<MyComponent props={...} />",
-        "b": "<MyComponent {props} />",
-        "c": "<MyComponent {...props} />",
-        "d": "<MyComponent [props] />"
-      },
-      "respuesta_correcta": "c"
-    },
-    {
-      "id": 8,
-      "pregunta": "¿Qué método se utiliza para realizar una solicitud HTTP en React?",
-      "respuestas": {
-        "a": "fetch()",
-        "b": "axios()",
-        "c": "http.get()",
-        "d": "request()"
-      },
-      "respuesta_correcta": "a"
-    },
-    {
-      "id": 9,
-      "pregunta": "¿Cuál es la función principal del método render() en un componente React?",
-      "respuestas": {
-        "a": "Actualizar el estado del componente",
-        "b": "Renderizar el componente en el DOM",
-        "c": "Ejecutar código justo antes de que el componente se desmonte",
-        "d": "Controlar eventos de clic en el componente"
-      },
-      "respuesta_correcta": "b"
-    },
-    {
-      "id": 10,
-      "pregunta": "¿Cuál de las siguientes opciones describe mejor los Hooks en React?",
-      "respuestas": {
-        "a": "Funciones que añaden estilo a los componentes",
-        "b": "Métodos utilizados para la manipulación del estado en React",
-        "c": "Clases base para la creación de componentes en React",
-        "d": "Métodos de ciclo de vida de los componentes en React"
-      },
-      "respuesta_correcta": "b"
-    }
-  ]
+  {
+    "id": 1,
+    "pregunta": "¿Cuál de las siguientes opciones describe mejor React?",
+    "respuestas": [
+      "Un lenguaje de programación",
+      "Un framework de JavaScript",
+      "Un sistema operativo",
+      "Una base de datos"
+    ],
+    "respuesta_correcta": 1
+  },
+  {
+    "id": 2,
+    "pregunta": "¿Cuál es la sintaxis correcta para renderizar un componente React en el DOM?",
+    "respuestas": [
+      "ReactDOM.renderComponent(MyComponent, document.getElementById('root'));",
+      "React.render(MyComponent, document.getElementById('root'));",
+      "ReactDOM.render(<MyComponent />, document.getElementById('root'));",
+      "React.renderComponent(<MyComponent />, document.getElementById('root'));"
+    ],
+    "respuesta_correcta": 2
+  },
+  {
+    "id": 3,
+    "pregunta": "¿Cuál de las siguientes opciones es una forma correcta de definir un estado inicial en un componente React?",
+    "respuestas": [
+      "getInitialState() { return { data: [] }; }",
+      "state = { data: [] };",
+      "this.state = { data: [] };",
+      "constructor(props) { super(props); this.state = { data: [] }; }"
+    ],
+    "respuesta_correcta": 2
+  },
+  {
+    "id": 4,
+    "pregunta": "¿Cuál es la forma recomendada de modificar el estado de un componente en React?",
+    "respuestas": [
+      "this.state.data = newValue;",
+      "this.setState({ data: newValue });",
+      "this.props.data = newValue;",
+      "this.modifyState({ data: newValue });"
+    ],
+    "respuesta_correcta": 1
+  },
+  {
+    "id": 5,
+    "pregunta": "¿Qué método se utiliza para ejecutar código justo después de que un componente se haya montado en el DOM?",
+    "respuestas": [
+      "componentDidMount()",
+      "componentWillMount()",
+      "componentDidUpdate()",
+      "componentWillUpdate()"
+    ],
+    "respuesta_correcta": 0
+  },
+  {
+    "id": 6,
+    "pregunta": "¿Cuál de las siguientes opciones describe mejor un componente controlado en React?",
+    "respuestas": [
+      "Un componente que no puede ser modificado después de su creación",
+      "Un componente que utiliza una función de flecha para su renderizado",
+      "Un componente cuyo estado es gestionado por el propio componente",
+      "Un componente que solo puede ser utilizado como hijo de otro componente"
+    ],
+    "respuesta_correcta": 2
+  },
+  {
+    "id": 7,
+    "pregunta": "¿Cuál es la forma correcta de pasar propiedades (props) a un componente en React?",
+    "respuestas": [
+      "<MyComponent props={...} />",
+      "<MyComponent {props} />",
+      "<MyComponent {...props} />",
+      "<MyComponent [props] />"
+    ],
+    "respuesta_correcta": 2
+  },
+  {
+    "id": 8,
+    "pregunta": "¿Qué método se utiliza para realizar una solicitud HTTP en React?",
+    "respuestas": ["fetch()", "axios()", "http.get()", "request()"],
+    "respuesta_correcta": 0
+  },
+  {
+    "id": 9,
+    "pregunta": "¿Cuál es la función principal del método render() en un componente React?",
+    "respuestas": [
+      "Actualizar el estado del componente",
+      "Renderizar el componente en el DOM",
+      "Ejecutar código justo antes de que el componente se desmonte",
+      "Controlar eventos de clic en el componente"
+    ],
+    "respuesta_correcta": 1
+  },
+  {
+    "id": 10,
+    "pregunta": "¿Cuál de las siguientes opciones describe mejor los Hooks en React?",
+    "respuestas": [
+      "Funciones que añaden estilo a los componentes",
+      "Métodos utilizados para la manipulación del estado en React",
+      "Clases base para la creación de componentes en React",
+      "Métodos de ciclo de vida de los componentes en React"
+    ],
+    "respuesta_correcta": 1
+  }
+]
