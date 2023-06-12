@@ -7,7 +7,7 @@ function App (): JSX.Element {
   const preguntas = usePreguntas(state => state.preguntas)
   return (
 
-    <div className="h-screen m-auto flex flex-col items-center justify-center bg-[#23262E]">
+    <div className="h-screen m-auto flex flex-col items-center justify-center bg-[#13151A]">
       <header className="flex items-center gap-2 justify-center text-white py-10">
         <img src={reactLogo} className="App-logo" alt="logo" />
         <h1 className="font-roboto font-bold text-3xl">React Quiz</h1>

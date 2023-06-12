@@ -15,7 +15,7 @@ export const Question = ({ info }: { info: Preguntas }) => {
   const delay = 0.2
   return (
     <>
-      <div className="bg-[#131519] px-10 py-36 rounded-md w-[600px]">
+      <div className="bg-[#262B33] px-10 py-36 rounded-lg w-[600px] border-4 border-white/10">
       <h1 className="text-xl text-white">{info.pregunta}</h1>
       <div className="flex flex-col gap-3 mt-10">
         {info.respuestas.map((answer, index) => (
