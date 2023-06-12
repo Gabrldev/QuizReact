@@ -20,15 +20,16 @@ export const usePreguntas = create<State>()(persist((set, get) => {
       set({ preguntas })
     },
     selectAnswer: (questionId: number, answerIndex: number) => {
+      // obtenemos el array de preguntas
       const { preguntas } = get()
-      // usar el structuredClone para clonar el objeto
-      const newQuestions = structuredClone(preguntas)
-      // encontramos el índice de la pregunta
+      // hacemos una copia del array de preguntas
+      const newQuestions = [...preguntas]
+      // encontramos el índex de la pregunta
       const questionIndex = newQuestions.findIndex((q: { id: number }) => q.id === questionId)
       // obtenemos la información de la pregunta
       const questionInfo = newQuestions[questionIndex]
-      // averiguamos si el usuario ha seleccionado la respuesta correcta
-      const isCorrectUserAnswer = questionInfo.correctAnswer === answerIndex
+      // vemos si el usuario seleccionó la respuesta correcta
+      const isCorrectUserAnswer = questionInfo.respuesta_correcta === answerIndex
       // actualizamos la información de la pregunta
       newQuestions[questionIndex] = {
         ...questionInfo,
@@ -38,6 +39,7 @@ export const usePreguntas = create<State>()(persist((set, get) => {
       // actualizamos el estado
       set({ preguntas: newQuestions })
     },
+    // función para pasar a la siguiente pregunta
     nextQuestion: () => {
       const { currentQuestion, preguntas } = get()
       const nextQuestion = currentQuestion + 1
@@ -45,6 +47,7 @@ export const usePreguntas = create<State>()(persist((set, get) => {
         set({ currentQuestion: nextQuestion })
       }
     },
+    // función para reiniciar el juego
     restart: () => {
       set({
         currentQuestion: 0,
@@ -52,6 +55,8 @@ export const usePreguntas = create<State>()(persist((set, get) => {
       })
     }
   }
-}, {
+},
+// configuración de persist en localStorage
+{
   name: 'preguntas'
 }))

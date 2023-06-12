@@ -1,8 +1,8 @@
-import { usePreguntas } from './state/preguntas'
+import { usePreguntas } from '../state/preguntas'
 function Start (): JSX.Element {
   const fetchPreguntas = usePreguntas((state) => state.fetchQuestions)
   const handleSubmt = () => {
-    fetchPreguntas(5)
+    fetchPreguntas(10)
   }
   return (
     <button

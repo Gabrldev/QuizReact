@@ -1,6 +1,6 @@
 import reactLogo from './assets/react.svg'
-import Game from './Game'
-import Start from './Start'
+import Game from './components/Game'
+import Start from './components/Start'
 import { usePreguntas } from './state/preguntas'
 
 function App (): JSX.Element {
