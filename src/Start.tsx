@@ -6,7 +6,7 @@ function Start (): JSX.Element {
   }
   return (
     <button
-      className="bg-sky-500 px-14 text-white border-none rounded-md py-1 hover:bg-sky-600"
+      className="bg-[#347EFF] px-14 text-white border-none rounded-md py-1 hover:bg-sky-600"
       onClick={handleSubmt}
     >
       Start

@@ -1,8 +1,8 @@
 export interface Preguntas {
   id: number
   pregunta: string
-  respuestas: []
-  respuesta_correcta: string
-  userSelected?: string
-  isCorrect?: boolean
+  respuestas: string[]
+  respuesta_correcta: number
+  userSelectedAnswer?: number
+  isCorrectUserAnswer?: boolean
 }
